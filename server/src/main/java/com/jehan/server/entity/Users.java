@@ -10,15 +10,14 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity
-@Table(name = "users")
 @Data
-public class User implements UserDetails {
+@Table(name = "user")
+public class Users  implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Integer id;
     private String email;
-    private String name;
     private String password;
     private String role;
 
